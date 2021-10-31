@@ -18,9 +18,9 @@ class SimpleReflexAgent {
             if(env.conf_A.equals("dirt")) {
                 performance_measure_score++;
                 action = "[Suck]";
-            }
+            } else action = "[Right]";
             if(env.conf_B.equals("dirt")) {
-                action += "[Right Suck]";
+                action += "[Suck]";
                 performance_measure_score++;
             }
 
@@ -28,9 +28,9 @@ class SimpleReflexAgent {
             if(env.conf_B.equals("dirt")) {
                 action = "[Suck]";
                 performance_measure_score++;
-            }
+            } else action = "[Left]";
             if(env.conf_A.equals("dirt")) {
-                action += "[Left Suck]";
+                action += "[Suck]";
                 performance_measure_score++;
             }  
         }
